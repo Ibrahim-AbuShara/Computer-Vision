@@ -14,7 +14,7 @@ while True:
     ret,frame=capture.read()
     cv2.imshow("Video",frame)
     if ret:
-        if cv2.waitKey(20) & 0xFF==ord('c'):
+        if cv2.waitKey(40) & 0xFF==ord('c'):
             break
     else:
         break

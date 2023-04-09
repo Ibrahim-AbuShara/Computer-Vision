@@ -1,5 +1,5 @@
 import cv2
-def resizer(frame,scale):
+def resizer(frame,scale=.9):
     l=int (frame.shape[0]*scale)
     w=int (frame.shape[1]*scale)
     return cv2.resize(frame,(w,l),interpolation=cv2.INTER_AREA)
